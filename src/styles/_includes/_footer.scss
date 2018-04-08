@@ -1,0 +1,82 @@
+// Footer styles
+
+#contact {
+	background: $color-brown;
+	> header {
+		padding-bottom: $gutter-space * 1.5;
+		h1 {
+			color: $color-white;
+			font-size: 20px;
+			text-align: center;
+			text-transform: uppercase;
+			padding-bottom: $gutter-space / 2;
+			@media (min-width: $screen-md) {
+				font-size: 3vw;
+			}
+		}
+		p {
+			color: $color-green;
+			text-align: center;
+		}
+	}
+
+	> section {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: $gutter-space;
+		justify-items: center;
+		padding-bottom: $gutter-space * 4;
+		.social {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: $gutter-space;
+			align-items: center;
+			justify-items: center;
+
+			.social-links {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-gap: $gutter-space * 2;
+				align-items: center;
+				justify-items: center;
+
+				a {
+					text-decoration: none;
+					color: $color-white;
+					font-size: 24px;
+				}
+			}
+			> span {
+				color: $color-white;
+				&.email {
+					font-size: 12px;
+					@media (min-width: $screen-sm) {
+						font-size: $base-font-size;
+					}
+				}
+				a {
+					color: $color-green;
+
+					&:hover {
+						color: $color-green-light;
+					}
+				}
+			}
+		}
+		.contact-address {
+			address {
+				color: $color-white;
+				display: grid;
+				grid-template-columns: 1fr;
+				align-items: center;
+				span {
+					line-height: 1.4;
+					text-align: center;
+				}
+				abbr {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

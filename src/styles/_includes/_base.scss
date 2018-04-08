@@ -1,0 +1,140 @@
+// Base Styles
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: $base-font-size;
+  font-family: 'Roboto', sans-serif;
+}
+
+// Typography
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Apply centering and vertical spacing to main containers
+.page-header {
+  padding: $gutter-space 3vw;
+  @media (min-width: $screen-sm) {
+    padding: $gutter-space 6vw;
+  }
+  @media (min-width: $screen-md) {
+    padding: $gutter-space 12vw;
+  }
+  @media (min-width: $screen-lg) {
+    padding: $gutter-space 16vw;
+  }
+  @media (min-width: $screen-xl) {
+    padding: $gutter-space 20vw;
+  }
+}
+
+.page-section {
+  padding: $gutter-space * 3 3vw;
+  @media (min-width: $screen-sm) {
+    padding: $gutter-space * 3 6vw;
+  }
+  @media (min-width: $screen-md) {
+    padding: $gutter-space * 3 12vw;
+  }
+  @media (min-width: $screen-lg) {
+    padding: $gutter-space * 3 16vw;
+  }
+  @media (min-width: $screen-xl) {
+    padding: $gutter-space * 3 20vw;
+  }
+}
+
+// Split the children of an element evenly
+.split-half {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $gutter-space;
+  @media (min-width: $screen-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $screen-lg) {
+    grid-gap: $gutter-space * 2;
+  }
+}
+
+.split-third {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $gutter-space;
+  @media (min-width: $screen-md) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $screen-lg) {
+    grid-gap: $gutter-space * 2;
+  }
+}
+.split-quarter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $gutter-space;
+
+  @media (min-width: $screen-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $screen-lg) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: $gutter-space * 2;
+  }
+}
+
+// Icon Fonts
+@font-face {
+  font-family: 'icomoon';
+  src: url('/assets/files/fonts/icomoon.eot?o1iq0o');
+  src: url('/assets/files/fonts/icomoon.eot?o1iq0o#iefix')
+      format('embedded-opentype'),
+    url('/assets/files/fonts/icomoon.ttf?o1iq0o') format('truetype'),
+    url('/assets/files/fonts/icomoon.woff?o1iq0o') format('woff'),
+    url('/assets/files/fonts/icomoon.svg?o1iq0o#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-maps:before {
+  content: '\e948';
+}
+.icon-facebook:before {
+  content: '\ea91';
+}
+.icon-instagram:before {
+  content: '\ea92';
+}
+.icon-linkedin:before {
+  content: '\eac9';
+}

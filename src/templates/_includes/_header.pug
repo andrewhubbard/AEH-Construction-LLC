@@ -1,35 +1,17 @@
-header
-	#page-header
-		h1.logo
-			a(href='/')
-				img(src='assets/files/images/AEH-Construction.png' alt='AEH Construction Logo')
-		.header
-			h1 Home Renovation / Remodeling
-		nav#main-nav
-			ul.page-links
-				li
-					a(href='/') Home
-				li.dropdown
-					span.glyphicon.glyphicon-th-list
-					|	Services 
-					ul.dropdown-menu
-						li
-							a(href="services-interior.html") Interior
-						li 
-							a(href="services-exterior.html") Exterior
-				li
-					a(href='/#main-info') Recent Work
-				li
-					a(href='/gallery.html') Gallery
-				li
-					a(href='/#footer') Contact
-	
-
-
-
-		
-
-
-
-
-
+header.page-header
+	h1.logo
+		a(href='/') AEH Construction
+		span Renovation &amp; Remodeling
+	nav.main-nav
+		#menu-btn
+			svg(width="30" height="30")
+				path(d="M0,5 30,5" stroke="#fff" stroke-width="3") 
+				path(d="M0,15 30,15" stroke="#fff" stroke-width="3") 
+				path(d="M0,25 30,25" stroke="#fff" stroke-width="3") 
+		ul#menu
+			li
+				a(href="/#services") Services
+			li
+				a(href='/#recentwork') Recent Work
+			li
+				a(href='/#footer') Contact

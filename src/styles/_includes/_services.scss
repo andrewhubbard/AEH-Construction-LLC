@@ -1,0 +1,57 @@
+// Services styles
+
+#services {
+  background: $color-paper;
+  header {
+    padding-bottom: $gutter-space * 3;
+    h1 {
+      color: $color-charcoal;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      @media (min-width: $screen-md) {
+        font-size: 3vw;
+      }
+    }
+  }
+  .content {
+    background: $color-white;
+    border-radius: $border-radius;
+    text-align: center;
+    padding: $gutter-space;
+
+    h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      padding-top: $gutter-space / 2;
+      padding-bottom: $gutter-space;
+      @media (min-width: $screen-md) {
+        font-size: 2vw;
+      }
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: $gutter-space;
+      @media (min-width: $screen-md) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: $gutter-space;
+      }
+      li {
+        padding: $gutter-space / 2.5 0;
+        h3 {
+          font-size: 14px;
+
+          @media (min-width: $screen-md) {
+            font-size: 1.5vw;
+          }
+
+          @media (min-width: $screen-lg) {
+            font-size: 1.25vw;
+          }
+        }
+      }
+    }
+  }
+}

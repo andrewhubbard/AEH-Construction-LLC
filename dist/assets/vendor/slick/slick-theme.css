@@ -21,8 +21,8 @@
 {
     font-size: 0;
     line-height: 0;
+
     position: absolute;
-   
     top: 50%;
 
     display: block;
@@ -36,8 +36,8 @@
 
     cursor: pointer;
 
-    color: black;
-    border: black;
+    color: transparent;
+    border: none;
     outline: none;
     background: transparent;
 }

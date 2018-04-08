@@ -1,0 +1,113 @@
+// Page Header and Main Nav Styles
+
+.page-header {
+  background: $color-primary;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  position: relative;
+  @media (max-width: $screen-md) {
+    grid-template-columns: 10fr 2fr;
+  }
+}
+
+.main-nav {
+  display: grid;
+  #menu-btn {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #menu {
+    position: absolute;
+    top: 100%;
+    background: $color-primary;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    @media (min-width: $screen-md) {
+      position: static;
+      top: auto;
+      background: transparent;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: $gutter-space;
+      align-items: center;
+      justify-items: end;
+      width: auto;
+      max-height: fit-content;
+      overflow: visible;
+    }
+    &.active {
+      max-height: 180px;
+      transition: max-height 0.4s;
+    }
+    li {
+      display: block;
+      @media (min-width: $screen-md) {
+        display: inline-block;
+      }
+      a {
+        display: block;
+        width: 100vw;
+        text-align: center;
+        font-size: 14px;
+        padding: $gutter-space 0;
+        @media (min-width: $screen-sm) {
+          font-size: 2.6vw;
+        }
+        @media (min-width: $screen-md) {
+          font-size: 2vw;
+          display: inline-block;
+          width: auto;
+          text-align: center;
+          padding: 0;
+        }
+        @media (min-width: $screen-lg) {
+          font-size: 1.4vw;
+        }
+        @media (min-width: $screen-xl) {
+          font-size: 1vw;
+        }
+
+        color: $color-white;
+        &:hover {
+          color: $color-theme;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  a {
+    display: block;
+    font-size: $logo-font-size;
+    font-weight: 600;
+    color: $color-white;
+    text-decoration: none;
+    @media (min-width: $screen-md) {
+      font-size: 2.5vw;
+    }
+  }
+  span {
+    font-size: $logo-font-size - 9px;
+    font-weight: 400;
+    color: $color-theme;
+    @media (min-width: $screen-md) {
+      font-size: 1.4vw;
+    }
+  }
+}

@@ -1,13 +1,11 @@
 doctype html
 html
-	head
-		title AEH Construction
-	include _includes/_head.pug
-	body#AEH-Construction
-		include _includes/_header.pug
-		main
-			include _includes/_main.pug
-		footer
-			include _includes/_footer.pug
-	include _includes/_scripts.pug
-	
+  include _includes/_head.pug
+  body
+    include _includes/_header.pug
+    main#main.wrap.container-fluid
+      include _includes/_banner.pug
+      include _includes/_services.pug
+      include _includes/_recentwork.pug
+    include _includes/_footer.pug
+  include _includes/_scripts.pug

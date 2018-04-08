@@ -1,47 +1,48 @@
 {
-  "name": "pawsitive",
-  "version": "0.0.0",
-  "description": "Pet Salon",
-  "license": "MIT",
-  "main": "",
-  "repository": "pawsitive",
-  "author": {
-    "name": "Andrew Hubbard",
-    "email": "andrewhubbard1983@gmail.com",
-    "url": ""
-  },
-  "scripts": {
-    "dev": "gulp",
-    "build": "gulp build",
-    "optimize": "gulp optimize",
-    "deploy": "gulp deploy",
-    "test": "mocha"
-  },
-  "keywords": [
-    "yeoman-generator"
-  ],
-  "dependencies": {
-    "browser-sync": "^2.14.0",
-    "critical": "^0.7.3",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-beautify": "^2.0.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssimport": "^3.0.2",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-imagemin": "^3.0.1",
-    "gulp-jshint": "^2.0.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-pug": "^3.0.3",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1",
-    "gulp-sourcemaps": "^2.0.0-alpha",
-    "gulp-uglify": "^1.5.3",
-    "gulp-uncss": "^1.0.5",
-    "jshint": "^2.9.4"
-  },
-  "devDependencies": {
-    "mocha": "*"
-  }
+    "name": "AehConstruction",
+    "version": "0.0.0",
+    "description": "AEH Construction LLC informational website",
+    "license": "MIT",
+    "main": "",
+    "repository": "AehConstruction",
+    "author": {
+        "name": "clinthubbardjr",
+        "email": "clinthubbardjr@gmail.com",
+        "url": ""
+    },
+    "scripts": {
+        "dev": "gulp",
+        "build": "gulp build",
+        "optimize": "gulp optimize",
+        "deploy": "gulp deploy",
+        "test": "mocha"
+    },
+    "keywords": [
+        "yeoman-generator"
+    ],
+    "dependencies": {
+        "browser-sync": "^2.23.6",
+        "critical": "^0.8.0",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.1",
+        "gulp-babel": "^6.1.1",
+        "gulp-beautify": "^2.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssimport": "^3.1.0",
+        "gulp-cssnano": "^2.1.2",
+        "gulp-imagemin": "^3.0.3",
+        "gulp-jscs": "^4.1.0",
+        "gulp-notify": "^2.2.0",
+        "gulp-plumber": "^1.1.0",
+        "gulp-pug": "^3.3.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.1.1",
+        "gulp-uglify": "^2.0.0",
+        "gulp-uncss": "^1.0.6",
+        "node-sass": "^4.8.3"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    }
 }
